@@ -1,0 +1,213 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+
+	<!--welcome-->
+		<div class="content">
+			<div class="welcome-w3ls" id ="about">
+				<div class="container">
+					<h2 class="tittle"> Welcome</h2>
+						<div class="border"></div>
+					<span>We offer guitar lessons for all skill levels, ages 7 and up. Our standardized curriculum covers key elements of guitar instruction, from finger and hand positioning to scales and arpeggios.</span>
+				</div>
+				<div class="wel-grids">
+					<div class="col-md-3 wel-grid">
+						<img src="{% static 'images/v1.jpg' %}" title="Designer_girl" class="img-responsive" alt=""/>
+					</div>
+					<div class="col-md-6 wel-grid1">
+						<div class="wel-left">
+							<h4>24+</h4>
+							<h5>Batches</h5>
+							<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+						</div>
+						<div class="wel-left">
+							<h4>1000+</h4>
+							<h5>Students</h5>
+							<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+						</div>
+						<div class="wel-left">
+							<h4>50+</h4>
+							<h5>Timeline</h5>
+							<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 wel-grid">
+						<img src="{% static 'images/v2.jpg' %}" title="Designer_girl" class="img-responsive" alt=""/>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		<!--welcome-->
+
+<!-- Our Services -->
+
+<div class="service-w3l" id="services">
+				<div class="container">
+					<h3 class="tittle"> Our Services</h3>
+					<div class="border"></div>
+					<div class="service-grids">
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+								</div>
+								<h4>Timeline</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
+								</div>
+								<h4>Party Events</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-time" aria-hidden="true"></i>
+								</div>
+								<h4>Grunt Workflow</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
+								</div>
+								<h4>50+ speakers</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="service-grids">
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+								</div>
+								<h4>7/24 Event</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-headphones" aria-hidden="true"></i>
+								</div>
+								<h4>25+ Events</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-bell" aria-hidden="true"></i>
+								</div>
+								<h4>50+ speakers</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="col-md-3 ser-grid">
+							<div class="ser-top">
+								<div class="con hvr-shutter-in-horizontal">
+									<i class="glyphicon glyphicon-picture" aria-hidden="true"></i>
+								</div>
+								<h4>Party Events</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	<!--/ Our Services -->
+
+
+
+		<div class="artists-agileits" id="artists">
+			<div class="container">
+			<h3 class="tittle">Artists</h3>
+			<div class="border"></div>
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides" id="slider">
+							<li>	 
+								<div class="caption">
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3"><img src="{% static 'images/a3.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Anderson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1"><img src="{% static 'images/a1.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>John Thomson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal2"><img src="{% static 'images/a2.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Mary Doe</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+							 <li>	 
+								<div class="caption">
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal4"><img src="{% static 'images/a4.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Eva Adamson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal5"><img src="{% static 'images/a5.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Tompson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3"><img src="{% static 'images/a3.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Anderson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+							<li>
+								<div class="caption">
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1"><img src="{% static 'images/a1.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>John Thomson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3"><img src="{% static 'images/a3.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Anderson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal5"><img src="{% static 'images/a5.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Tompson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock  %}
+
+
+	

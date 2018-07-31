@@ -1,0 +1,53 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+<br><br>
+
+
+<div class="container">
+<h3 class="tittle"> Fees Structure</h3>
+<div class="border"></div>
+
+<br><br>
+
+<div class=" table-responsive">
+	<table class="table table-striped ">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Programmes</th>
+				<th>Days Per Week</th>
+				<th>Class Duration</th>
+				<th>Monthly Fees</th>
+				<th>Certification</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+		{% for obj in Feestructure %}
+		<tr>
+			<td>{{ forloop.counter }}</td>
+			<td>{{ obj.Programmes_name }} </td>
+			<td>{{ obj.Days_per_week }} </td>
+			<td>{{ obj.Class_duration }} </td>
+			<td>{{ obj.fees }} </td>
+			<td>{{ obj.certification }} </td>
+			
+		</tr>
+		
+		 {% endfor %}
+		</tbody>
+	</table>
+</div>
+
+</div>
+
+
+
+</div>
+{% endblock  %}

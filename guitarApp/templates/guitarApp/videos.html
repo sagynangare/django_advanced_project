@@ -1,0 +1,26 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+
+<div class="container">
+  <div class="row">
+     {% for vid in videos %}
+    <div class="col-sm-6">
+
+
+      <h2>{{ vid.title }}</h2><br><br>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="//{{ vid.link }}"></iframe>
+</div><br><br>
+
+    </div>
+  {% endfor %} 
+  </div>
+</div>
+<br><br>
+
+{% endblock  %}

@@ -1,0 +1,80 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+{% load thumbnail %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+
+<style type="text/css">
+.buttonstyle {
+    background-color: #E74C3C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+
+</style>
+
+<!-- About Guitar -->
+		<div class="artists-agileits" id="artists">
+			<div class="container">
+				 
+			<h3 class="tittle">Types of Guitar</h3>
+			<div class="border"></div>
+
+				<div class="slider">
+					<div class="callbacks_container">
+								
+						<ul class="rslides" id="">
+							<li>	 
+								<div class="caption">
+								{% for obj in guitar %}
+									<div class="col-md-4 cap-left">
+									
+							
+								 <div class="panel-body" style="max-height:250px; overflow-y: hidden">
+                            <img src="{{MEDIA_URL}}{{ obj.image.url}}" alt="" height="200" width="250">
+
+                                </div>
+								</center>
+
+
+										
+
+									<h4>{{ obj.title }}</h4>
+										<h5 style="text-align: justify;">{{ obj.overview|truncatewords:"50"  }}</h5><br>
+
+										<a href="{% url "guitar-details" obj.id %}" class="buttonstyle">See More...</a>
+
+
+									</div>
+
+								{% endfor %}
+									<div class="clearfix"></div>
+								</div>
+							</li>
+	
+									<div class="clearfix"></div>
+										
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+
+		<!-- / About Guitar -->
+
+{% endblock  %}

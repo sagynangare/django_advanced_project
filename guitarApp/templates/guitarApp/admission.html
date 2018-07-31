@@ -1,0 +1,37 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+
+<div class="container">
+<h3 class="tittle"> Addmission Form</h3>
+	<div style="" class="contact-info col-md-offset-3">
+				<form action="#" method="post">
+				<div class="form-group row">
+					<input  type="text" name="Name" placeholder="Your Name" required>
+				</div>
+
+				<div class="form-group row">
+					<input  type="text" name="Email" placeholder="Your Email" required>
+				</div>
+				<div class="form-group row">
+					<input  type="text" name="Address" placeholder="Address" required>
+				</div>
+				<div class="form-group row">
+					<input  type="text" name="MobileNo" placeholder="MobileNo." required>
+				</div>
+				<div class="form-group row">
+					
+					<input type="submit" value="SEND MESSAGE">
+				</div>
+				</form><br>
+	</div>
+
+
+	
+</div>
+
+{% endblock  %}

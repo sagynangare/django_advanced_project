@@ -1,0 +1,35 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+{% load thumbnail %}
+{% block banner %}
+{% endblock %}
+{% block maincontent  %}
+
+<div class="service-sec">
+    <div class="container">
+        <div class="panel-body">
+            <div class="row ">
+                <div class="col-md-3 col-xs-12 col-sm-4 col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body" style="max-height:250px; overflow-y: hidden">
+
+                            <img src="{{MEDIA_URL}}{{ object.image.url}}" alt="" height="200" width="200">
+                            </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-md-9 col-xs-12 col-sm-8 col-lg-9">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <h4>{{object.title}} - </h4>
+                            <br>{{object.details}}<br><br><br><br>
+                            <h4>Overview</h4>
+                            <br>{{object.overview}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}

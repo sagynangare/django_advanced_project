@@ -1,0 +1,266 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+{% block banner %}
+{% endblock %}
+{% block maincontent  %}
+	<div class="banner-section">
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="slider-info">
+							<img src="{% static 'images/ba1.jpg' %}" class="img-responsive" alt="">
+						</div>
+						<div class="container">
+							<div class="banner-text">
+								<h4 style="color: #E74C3C; font-weight: bold;">I don't read music. I don't write it. So I wander around on the guitar until something starts to present itself.</h4>
+								<p>-James Taylor</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-info">
+							<img src="{% static 'images/ba2.jpg' %}" class="img-responsive" alt="">
+						</div>
+						<div class="container">
+							<div class="banner-text">
+								<h4 style="color: #E74C3C; font-weight: bold;">My guitar is not a thing. It is an extension of myself. It is who I am.</h4>
+								<p>-Joan Jeet</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-info">
+							<img src="{% static 'images/ba3.jpg' %}" class="img-responsive" alt="">
+						</div>
+						<div class="container">
+							<div class="banner-text">
+								<h4 style="color: #E74C3C; font-weight: bold;">I want every girl in the world to pick up a guitar and start screaming.</h4>
+								<p>-Courtney Love</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+			<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+				<script type="text/javascript">
+					$(function(){
+						SyntaxHighlighter.all();
+					});
+					$(window).load(function(){
+					$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+					});
+					});
+				</script>
+</div>
+
+
+	<!--welcome-->
+		<div class="content">
+			<div class="welcome-w3ls" id ="about">
+				<div class="container">
+					<h2 class="tittle"> Welcome</h2>
+						<div class="border"></div>
+					<span>The Guitar MAX is the Pune's leading and most imitated school of contemporary Guitar Playing. The school is not just a classroom experience - it's a total immersion in the world of Guitar. Learn a new riff or lick in the morning and use it on stage that same afternoon under the personal supervision of working professionals. Gain first-hand access to some of the greatest guitar players in India through frequent clinics and concerts. The True Teacher's utmost desire is to aid, guide, and do whatever it takes to bring the student to their place of happiness and fulfillment as a musician and guitarist. The student may not have a clear idea of what this place is, and certainly not where it is. The teacher may not know either, but he knows more than the student, and he must help the student feel their way if necessary. The True Teacher knows that if this person is destined to be a musician, (which is another way of saying if they really want it bad enough), then their place of happiness and fulfillment does exist, and can be found. And "The True Teacher" resolves to do whatever it takes to make that come about.</span>
+				</div>
+				<div class="wel-grids">
+					<div class="col-md-3 wel-grid">
+						<img src="{% static 'images/v1.jpg' %}" title="Designer_girl" class="img-responsive" alt=""/>
+					</div>
+					<div class="col-md-6 wel-grid1">
+						<div class="wel-left">
+							<h4>24+</h4>
+							<h5>Batches</h5>
+							<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+						</div>
+						<div class="wel-left">
+							<h4>1000+</h4>
+							<h5>Students</h5>
+							<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+						</div>
+						<div class="wel-left">
+							<h4>50+</h4>
+							<h5>Timeline</h5>
+							<p>Lorem ipsum dolor sit amet, alia honestatis an qui, ne soluta nemore eripuit sed. Falli exerci aperiam ut </p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-3 wel-grid">
+						<img src="{% static 'images/v2.jpg' %}" title="Designer_girl" class="img-responsive" alt=""/>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		<!--welcome-->
+
+	<div class="service-w3l" id="services">
+			<div class="container">
+				<h3 class="tittle"> Our Services</h3>
+				<div class="border"></div>
+				<div class="service-grids">
+					<div class="col-md-3 ser-grid">
+						<div class="ser-top">
+							<div class="con hvr-shutter-in-horizontal">
+								<i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+							</div>
+							<h4>Staff Notation </h4>
+							<p>Proper procedure to learn in Western (with Staff Notation) & Indian Style</p>
+						</div>
+					</div>
+					<div class="col-md-3 ser-grid">
+						<div class="ser-top">
+							<div class="con hvr-shutter-in-horizontal">
+								<i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
+							</div>
+							<h4>Best Instructor </h4>
+							<p>Experienced & well-versed Instructor (Music Arranger) to guide</p>
+						</div>
+					</div>
+					<div class="col-md-3 ser-grid">
+						<div class="ser-top">
+							<div class="con hvr-shutter-in-horizontal">
+								<i class="glyphicon glyphicon-time" aria-hidden="true"></i>
+							</div>
+							<h4>Individual Class</h4>
+							<p>Individual care for every student in an ideal environment</p>
+						</div>
+					</div>
+					<div class="col-md-3 ser-grid">
+						<div class="ser-top">
+							<div class="con hvr-shutter-in-horizontal">
+								<i class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
+							</div>
+							<h4>50+ speakers</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+		
+				</div>
+			</div>
+
+
+
+		<div class="artists-agileits" id="artists">
+			<div class="container">
+			<h3 class="tittle">Artists</h3>
+			<div class="border"></div>
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides" id="slider">
+							<li>	 
+								<div class="caption">
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3"><img src="{% static 'images/a3.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Anderson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1"><img src="{% static 'images/a1.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>John Thomson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal2"><img src="{% static 'images/a2.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Mary Doe</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+							 <li>	 
+								<div class="caption">
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal4"><img src="{% static 'images/a4.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Eva Adamson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal5"><img src="{% static 'images/a5.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Tompson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3"><img src="{% static 'images/a3.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Anderson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+							<li>
+								<div class="caption">
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1"><img src="{% static 'images/a1.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>John Thomson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3"><img src="{% static 'images/a3.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Anderson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="col-md-4 cap-left">
+										<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal5"><img src="{% static 'images/a5.jpg' %}" class="img-responsive" alt=""/></a>
+										<h4>Tompson</h4>
+										<h5>Director, ABC</h5>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Our Tweets -->
+
+<div class="service-w3l" id="services">
+				<div class="container">
+					<h3 class="tittle">Tweets</h3>
+					<div class="border"></div>
+					<div class="service-grids">
+<a class="twitter-timeline" data-width="1000" data-height="500" href="https://twitter.com/mayur_kakade">Tweets by Mayur_kakade</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+						</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	<!--/ Our Tweets -->
+		<!--Biography-->
+			<div class="biography-w3agile" id="biography">
+				<div class="container">
+					<h3 class="tittle1">Biography</h3>
+					<div class="border1"></div>
+					<div class="biography-grids">
+						<div class="col-md-6 biography-grid">
+						<img src="{% static 'images/a5.jpg' %}" class="img-responsive" alt=""/>
+						</div>
+						<div class="col-md-6 biography-grid">
+							<h4>Who are we?</h4>
+							<p>Guitar MAX is the only Guitar school that offers sequential-based programs for all age groups. This means that you can start your music education with us as a baby, and continue "graduating" on to the next sequential program throughout adulthood, even into the professional level. The many benefits of this approach include becoming completely comfortable in your learning environment, and being able to stay under that tutelage as your needs and goals change. You can build relationships here at Guitar MAX, and we think of you as our extended family. That makes all the difference in the world to your learning success!</p>
+							
+							<div class="clearfix"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		<!--Biography-->
+
+
+
+		<div>
+
+{% endblock  %}

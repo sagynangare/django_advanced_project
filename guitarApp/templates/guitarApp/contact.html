@@ -1,0 +1,72 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+<!-- contact-us -->
+	<div class="">
+		<div class="container">
+
+			<div class="contact-info">
+				<form action="#" method="post">
+					{% csrf_token %}
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="text" name="Email" placeholder="Your Email" required>
+					<input type="text" name="Subject" placeholder="Subject" required>
+					<textarea placeholder="Your Message" name="Message" required></textarea>
+					<input type="submit" value="SEND MESSAGE">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Address -->
+
+		<div class="">
+			<h3 class="tittle">ADDRESS</h3>
+			<div class="border"></div>
+
+
+			
+				<div class="container">
+					<div style="margin:  58px 77px;">
+		<!-- 				<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							<p><a href="mail-to:example@mail.com">Email : example@mail.com</a></p>
+						</div> -->
+						<div class="col-md-12 contact-grid text-center">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							<h4 style="color: #34495E">Flat No.14 Nawale Residency, Near Kate Petrol pump, Pimple Saudagar, Pune-411027</h4>
+						</div>
+	<!-- 					<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							<p>Telephone : +613 0000 0000</p>
+						</div> -->
+						
+					</div><br><br>
+
+		</div>
+
+
+
+<!-- /Address -->
+
+
+	<!-- Map -->
+	<div id="contact" class="contact">
+		<div class="container">
+			<h3 class="tittle">Contact</h3>
+			<div class="border"></div>
+		</div>
+		<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6460502323603!2d73.85124761406725!3d18.454373076013795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eacf566f8045%3A0xce50b52d55c1a9a7!2sRajaram+Gas+Distributors!5e0!3m2!1sen!2sin!4v1490261507506" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+<!-- /map -->
+
+{% endblock  %}

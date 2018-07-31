@@ -1,0 +1,46 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+
+{% block banner %}
+
+{% endblock %}
+{% block maincontent  %}
+
+<!-- About Guitar -->
+		<div class="artists-agileits" id="artists" >
+			<div class="container">
+				 
+			<h3 class="tittle">Batches</h3>
+			<div class="border"></div>
+
+				<div class="slider">
+					<div class="callbacks_container">
+								
+						<ul class="rslides" id="">
+							<li>	 
+								<div class="caption">
+								{% for obj in Batches %}
+									<div class="col-md-4 cap-left"><br>
+								
+										<h4>{{ obj.batch_name }}</h4>
+										<h5>{{ obj.batch_datetime }}</h5><br>
+										<h3>{{ obj.days }}</h3><br>
+										<h5>{{ obj.details }}</h5>
+									</div>
+								{% endfor %}
+									<div class="clearfix"></div>
+								</div>
+							</li>
+	
+									<div class="clearfix"></div>
+										
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		<!-- / About Guitar -->
+{% endblock  %}

@@ -1,0 +1,39 @@
+{% extends "guitarApp/base.html" %}
+{% load staticfiles %}
+{% load thumbnail %}
+{% block banner %}
+{% endblock %}
+{% block maincontent  %}
+
+
+<!-- Our Services -->
+
+<div class="service-w3l" id="services">
+                <div class="container">
+                    <h3 class="tittle"> Buy Guitar</h3>
+                    <div class="border"></div>
+                    <div class="service-grids">
+                    {% for obj in buyguitar %}
+                        <div class="col-md-3 ser-grid">
+                            <div class="ser-top">
+                                <div class="well">
+                                    <center><img src="{{MEDIA_URL}}{{ obj.image.url}}" title="Designer_girl" class="img-responsive" alt="" height="100%" width="500%" /></center>
+                                
+                                <a href="{% url 'buy-guitar-details' obj.id %}"><h4>{{ obj.title|upper }}</h4></a>
+                                <h3 align="left"><i class="fa fa-inr" aria-hidden="true">{{ obj.amount }}</i></h3><br>
+
+                                <p>{{ obj.details }}</p>
+                            </div>
+                        </div>
+                        </div>
+
+                    {% endfor %}
+                </div>
+
+
+            </div>
+</div>
+    <!--/ Our Services -->
+
+
+{% endblock  %}

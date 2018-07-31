@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<title>GuitarMAX</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="Guitar MAX Music classes in Pune , guitar in Pune, Pune Guitar guitar classes in pune, Guitar class in Pune, guitar in pune, Guitar class in Katraj, Guitar classes in Katraj, Guitar in Katraj, Guitar Katraj, guitar pune, guitar max katraj, guitarmax katraj, " />
+
+
+<!--css-->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'css/swipebox.css' %}" type="text/css" media="all" />
+<link href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+
+<!-- <script src="https://use.fontawesome.com/a56eb7ad57.js"></script>
+ -->
+<!--css-->
+
+<script type="application/x-javascript"> 
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" />
+
+
+<!--js-->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!--js-->
+
+
+<!--webfonts-->
+<link href='//fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<!-- <script src="{% static 'Nova_Round/NovaRound.ttf' %}" rel='stylesheet' type='text/css'></script> -->
+
+<!--webfonts-->
+
+
+<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+
+ <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+
+
+  <!--Include jQuery & Filterizr-->
+	<script src="{% static 'js/jquery.filterizr.js' %}"></script>
+	<script src="{% static 'js/controls.js' %}"></script>
+
+		<!--Kick off Filterizr-->
+			<script type="text/javascript">
+				$(function() {
+					//Initialize filterizr with default options
+				$('.filtr-container').filterizr();
+			});
+		</script>
+
+  {% block head_css %}{% endblock %}
+<!--gallery-->
+<!--startsmothscrolling-->
+<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+
+	<script src="{% static 'js/jquery.swipebox.min.js' %}"></script> 
+
+	<script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+	</script>
+
+
+<style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a.active {
+
+    color: white;
+}
+
+.navstyle a:hover  {
+ font-family: 'Nova Round', cursive;
+ font-size: 15px;
+ color: #E74C3C!important; 
+
+}
+
+.navstyle {
+ font-family: 'Nova Round', cursive;
+ font-size: 15px;
+ color: #E74C3C!important;
+ 
+
+}
+
+
+
+
+.selected {
+    color: white;
+    background:green
+}
+
+
+.titalstyle{
+ font-family: 'Nova Round', cursive;
+ font-size: 30px;
+
+
+}
+
+
+#navbar-close {
+  color: #888;
+  width: 22px;
+  height: 14px;
+}
+
+</style>
+
+
+
+
+<script type="text/javascript">
+	
+
+
+$(function() {
+  
+  $('#bs-example-navbar-collapse-1')
+    .on('shown.bs.collapse', function() {
+      $('#navbar-hamburger').addClass('hidden');
+      $('#navbar-close').removeClass('hidden');    
+    })
+    .on('hidden.bs.collapse', function() {
+      $('#navbar-hamburger').removeClass('hidden');
+      $('#navbar-close').addClass('hidden');        
+    });
+  
+});
+
+</script>
+<!--swipe box js-->
+
+{% block head_javascript %}{% endblock %}
+
+
+
+</head>
+<body>
+
+{% block header %}
+<!--header-->
+<div class="header" id="home">
+	<div class="header-top">
+		<div class="container">
+			<div class="social-icons">
+				<a href="#"><i class="icon"></i></a>
+				<a href="#"><i class="icon1"></i></a>
+				<a href="#"><i class="icon2"></i></a>
+				<a href="#"><i class="icon3"></i></a>
+			</div>
+			<div class="detail">
+				<marquee>
+					<ul>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> <a>Call Sagar for queries on: +91 997 534 0919</a></li>
+						<li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Mon-Sat 10:00 am to 9:00 pm </li>
+					</ul>
+			    </marquee>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+<div class="">
+
+
+
+
+
+<nav class="navbar navbar-default ">
+<div class="container">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="ChangeToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <div id="navbar-hamburger">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+        <div id="navbar-close" class="hidden">
+          <span class="glyphicon glyphicon-remove"></span>
+        </div>
+      </button>
+      <a style=" color: #E74C3C;"  class="navbar-brand titalstyle" href="/">Guitar MAX</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <span class="menu"></span>
+      <ul class="nav navbar-nav navstyle">
+        	
+        	<li ><a  href="/home" class="scroll">Home <span class="sr-only mk">(current)</span> </a></li>
+            <li><a href="/about" class="scroll">About</a></li>
+            <li><a href="/details" class="scroll">Guitar Details</a></li>
+            <li><a href="/buyguitar" class="scroll">Buy Guitar</a></li>
+
+            <li><a href="/videos" class="scroll">Videos </a></li>
+            <li><a href="/feestructure" class="scroll">Fee Structure</a></li>
+            <li><a href="/batches" class="scroll">Batches</a></li>
+            <li><a href="/contact" class="scroll">Contact</a></li>
+            <li><a href="/home" class="scroll">Blog</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+	
+</div>
+</div>
+
+ {% endblock %}
+  {% block maincontent %}{% endblock  %}
+{% block footer %}
+<!-- contact-us -->
+
+
+			<div class="contact-us">
+				<div class="container">
+					<div class="contact-grids">
+						<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							<p><a href="mail-to:example@mail.com">Email : snangare@gmail.com</a></p>
+						</div>
+						<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							<p>Pimple Saudagar, Pune</p>
+						</div>
+						<div class="col-md-4 contact-grid text-center">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							<p>Telephone :<a>+91 3058023020</a></p>
+						</div>
+						<div class="clearfix"></div>
+					</div><br><br>
+		<!--footer-->
+			<div class="copy-section">
+				<div class="container">
+					<div class="footer-top">
+						<p >&copy; 2018 Guitar Max. All rights reserved | Design by  <a style="color: #E74C3C;" href="http://Sahyadri-infotech.com">Sagvik Technologies</a></p>
+					</div>
+					<!-- <a href="#home" class="scroll top"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a> -->
+				</div>
+			</div>
+	<!--footer-->
+
+
+
+    {% endblock %}
+
+			<!-- footer -->
+
+      {% block js %}{% endblock  %}
+	</body>
+</html>
+
