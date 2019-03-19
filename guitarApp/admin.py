@@ -7,4 +7,3 @@ admin.site.register(Batches)
 admin.site.register(Feestructure)
 admin.site.register(Buyguitar)
 admin.site.register(Post)
-
